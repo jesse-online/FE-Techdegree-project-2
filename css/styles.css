@@ -255,6 +255,7 @@ Media queries
     .main-content .container {
         margin: 0 auto;
     }
+    
     .portfolio-item {
         float: left;
         margin: 0 20px;
