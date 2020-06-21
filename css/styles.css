@@ -89,9 +89,9 @@ Layout styles
     font-size: 1.25em;
 }
 
-.main-nav a:active,
-.footer-nav a:active {
-    font-weight: normal;
+.main-nav a:hover,
+.footer-nav a:hover {
+    font-weight: 100;
 }
 
 .main-nav li a,
@@ -268,7 +268,7 @@ Media queries
     }
 
     .main-footer {
-        width: 94%;
+        width: 93%;
         margin: 0 auto;
     }
 
@@ -299,6 +299,25 @@ Media queries
 
 @media (min-width: 1024px) {
     
+
+    .main-header {
+        padding-top: 2em;
+    }
+
+    .main-header h1 {
+        float: left;
+        padding-left: .75em;
+    }
+
+    .main-header nav ul {
+        float: right;
+        padding: 1.15em 0;
+    }
+
+    .intro {
+        margin-top: 1.5em;
+    }
+
     .main-content {
         width: calc(100% - 3em);
         margin: 0 auto;
