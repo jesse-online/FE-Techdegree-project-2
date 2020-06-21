@@ -1,0 +1,326 @@
+/*****************
+
+Element-level styles 
+
+******************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    color: darkslategrey;
+}
+
+a {
+    color: darkslategrey;
+}
+
+h1,
+h2 {
+    font-family: Lato, sans-serif;
+}
+
+h1 {
+    padding: 0.75em 0;
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+h2 {
+    margin: 0;
+    padding: 1em 0;
+    text-transform: uppercase;
+
+}
+
+img {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    color: rgb(230, 230, 230);
+    background-color: rgb(230, 230, 230);
+    width: 90%;
+}
+
+/*****************
+
+Layout styles 
+
+******************/
+
+.wrapper {
+    background-color: rgb(248, 248, 248);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.main-header {
+    margin: 0 auto 1em;
+}
+
+.main-nav ul,
+.main-footer ul {
+    font-family: Lato, sans-serif;
+    list-style-type: none;
+    padding: 0 0.5em;
+    margin: 0;
+}
+
+.main-nav a,
+.footer-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.main-nav a:active,
+.footer-nav a:active {
+    font-weight: normal;
+}
+
+.main-nav li a,
+.footer-nav li a {
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 15px;
+    margin-top: 5px;
+    background-color: #fff;
+}
+
+.container,
+.intro,
+.main-footer {
+    text-align: center;
+}
+
+.intro {
+    margin-top: 3em;
+}
+
+.intro img {
+    width: 250px;
+}
+
+.intro p {
+    padding: 1em;
+    font-size: 1.25em;
+}
+
+.main-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.main-content .container {
+    margin: 0;
+    padding: 1em;
+}
+
+.main-content h2 {
+    margin: 0;
+    padding: 1.5em 0;
+}
+
+.main-content h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.main-content p {
+    padding: 0 1em 1.5em;
+}
+
+.portfolio-item {
+    margin: 1em 0 0;
+}
+.skills {
+    padding-bottom: 2em;
+}
+
+.skills h2 {
+    padding-top: 0;
+}
+
+.skills li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px 25px; /* The more massive the li, the greater the skill level!!! (I read this online.) */
+    margin-right: 10px;
+    margin-bottom: 15px;
+    background-color: rebeccapurple;
+    border: solid 1px slategrey;
+    font-size: 1.25em;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.contact {
+    margin-top: 1em;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+
+.contact h2 {
+    padding: 1.5em 0;
+}
+
+.contact p {
+    padding-bottom: 1em;
+}
+
+.contact p span {
+    margin-left: 0.75em;   
+}
+
+#contact-copy {
+    padding: 0 1em 1.5em;
+}
+
+.main-footer {
+    padding: 1.5em 1em;
+}
+
+.footer-name {
+    font-weight: bold;
+    float: left;
+}
+
+.footer-top {
+    float: right;
+}
+
+.footer-nav {
+    display: none;
+}
+
+
+/*****************
+
+Media queries
+
+******************/
+
+@media (min-width: 768px) {
+    .main-header p,
+    .skills p,
+    .contact p {
+        font-size: 1.35em;
+    }
+    
+    .main-nav li,
+    .footer-nav li {
+        display: inline-block;
+        margin: 0 0.5em 0;
+    }
+
+    .main-nav li a,
+    .footer-nav li a {
+        background-color: unset;
+    }
+
+    .intro {
+        padding: 1.5em 1.5em 3em 1.5em;
+    }
+
+    .intro img {
+        float: right;
+        width: 40%;
+    }
+
+    .intro p {
+        float: left;
+        text-align: left;
+        width: 60%;
+        padding: 0 1em 0 0;
+    }
+
+    .main-content .container {
+        margin: 0 auto;
+    }
+    .portfolio-item {
+        float: left;
+        margin: 0 20px;
+        width: calc(50% - 40px);
+        min-height: 375px;
+    }
+
+    .contact p {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .main-footer {
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .main-footer ul {
+        padding: 0;
+    }
+
+    .footer-top {
+        display: none;
+    }
+
+    .footer-nav {
+        display: inline-block;
+        float: right;
+    }
+
+    .footer-nav li {
+        margin: 0;
+    }
+
+    .footer-nav li a {
+        font-size: 0.75em;
+        padding: 0 5px;
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    
+    .main-content {
+        width: calc(100% - 3em);
+        margin: 0 auto;
+    }
+
+    .main-content .container {
+        margin: 0 auto;
+    }
+
+    .portfolio-item {
+        width: calc(33.333% - 40px);
+    }
+
+}
+
+/*****************
+
+Clear fix
+
+******************/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
